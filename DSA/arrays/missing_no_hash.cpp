@@ -6,7 +6,7 @@ int missing_no(vector<int> &arr){
     for(int i=0 ; i<n ; i++){
        hash[arr[i]]=1;
     }
-    for(int i=1 ; i<n ; i++){
+    for(int i=1 ; i<=n ; i++){
         if(hash[i]==0){
             return i;
         }
@@ -17,4 +17,5 @@ int main ()
 {
     vector<int> arr={1,2,3,5,6,7,8,9};
     cout<<missing_no(arr)<<endl;
+    return 0;
 }
